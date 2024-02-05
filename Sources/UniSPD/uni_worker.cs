@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.IO;
 using System.Drawing;
 using System.IO.Ports;
@@ -127,7 +127,19 @@ namespace iReverse_UniSPD_FRP.UniSPD
         {
             string size = "1M";
             await ErasePartition("misc", size, cancelToken);
-            await ErasePartition("userdata", size, cancelToken);
+
+            size = await uni.send_get_partition_size("userdata", cancelToken);
+            if (size == "0")
+            {
+                string files = Application.StartupPath + "\\Data\\Misc\\1";
+                await Recovery_Command(files, cancelToken);
+            }
+            else
+            {
+                string files = Application.StartupPath + "\\Data\\Misc\\6";
+                await ErasePartition("userdata", size, cancelToken);
+                await FlashPartition("userdata", files, cancelToken);
+            }
         }
 
         public static async Task Erase_FRP(CancellationToken cancelToken)
@@ -214,15 +226,15 @@ namespace iReverse_UniSPD_FRP.UniSPD
 
             while ((PartitionData_len > 0))
             {
-                if (PartitionData_len > 4088)
+                if (PartitionData_len > 1016)
                 {
                     await uni.send_midst(
-                        uni.TakeByte(PartitionData, PartitionData_writen, 4088),
+                        uni.TakeByte(PartitionData, PartitionData_writen, 1016),
                         cancelToken
                     );
 
-                    PartitionData_len -= 4088;
-                    PartitionData_writen += 4088;
+                    PartitionData_len -= 1016;
+                    PartitionData_writen += 1016;
                 }
                 else
                 {
@@ -267,7 +279,7 @@ namespace iReverse_UniSPD_FRP.UniSPD
             );
             using (stream)
             {
-                byte[] buffer = new byte[4097];
+                byte[] buffer = new byte[1024];
 
                 ulong i = 0;
                 ulong BYTES_TO_READ = uni.StrToSize(size); // Partition Size
