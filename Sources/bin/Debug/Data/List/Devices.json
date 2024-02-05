@@ -1,0 +1,163 @@
+[
+	{
+		"Devices": "Infinix Hot 10i",
+		"Models": "PR652B",
+		"Platform": "SPD",
+		"Conn": "port",
+		"Boot": "download"
+	},
+	{
+		"Devices": "Infinix Hot 12 Play",
+		"Models": "X6816C",
+		"Platform": "SPD",
+		"Conn": "port",
+		"Boot": "download"
+	},
+	{
+		"Devices": "Infinix Smart 6 - A",
+		"Models": "X6511",
+		"Platform": "SPD",
+		"Conn": "port",
+		"Boot": "download"
+	},
+	{
+		"Devices": "Infinix Smart 6 - B",
+		"Models": "X6511B",
+		"Platform": "SPD",
+		"Conn": "port",
+		"Boot": "download"
+	},
+	{
+		"Devices": "Realme",
+		"Models": "C11 RMX3231",
+		"Platform": "SPD",
+		"Conn": "port",
+		"Boot": "download"
+	},
+	{
+		"Devices": "Realme",
+		"Models": "C21Y RMX3261",
+		"Platform": "SPD",
+		"Conn": "port",
+		"Boot": "download"
+	},
+	{
+		"Devices": "Realme",
+		"Models": "C21Y RMX3263",
+		"Platform": "SPD",
+		"Conn": "port",
+		"Boot": "download"
+	},
+	{
+		"Devices": "Realme",
+		"Models": "C25Y RMX3265",
+		"Platform": "SPD",
+		"Conn": "port",
+		"Boot": "download"
+	},
+	{
+		"Devices": "Realme",
+		"Models": "C25Y RMX3269",
+		"Platform": "SPD",
+		"Conn": "port",
+		"Boot": "download"
+	},
+	{
+		"Devices": "Realme",
+		"Models": "C30 RMX3581",
+		"Platform": "SPD",
+		"Conn": "port",
+		"Boot": "download"
+	},
+	{
+		"Devices": "Realme",
+		"Models": "C31 RMX3501",
+		"Platform": "SPD",
+		"Conn": "port",
+		"Boot": "download"
+	},
+	{
+		"Devices": "Realme",
+		"Models": "C35 RMX3511",
+		"Platform": "SPD",
+		"Conn": "port",
+		"Boot": "download"
+	},
+	{
+		"Devices": "Realme",
+		"Models": "Narzo 50A Prime RMX3516",
+		"Platform": "SPD",
+		"Conn": "port",
+		"Boot": "download"
+	},
+	{
+		"Devices": "Techno",
+		"Models": "Pop 4 BC2C",
+		"Platform": "SPD",
+		"Conn": "port",
+		"Boot": "download"
+	},
+	{
+		"Devices": "Techno",
+		"Models": "Pop 5 BD2",
+		"Platform": "SPD",
+		"Conn": "port",
+		"Boot": "download"
+	},
+	{
+		"Devices": "Techno",
+		"Models": "Pop 5 BD2P",
+		"Platform": "SPD",
+		"Conn": "port",
+		"Boot": "download"
+	},
+	{
+		"Devices": "Techno",
+		"Models": "Pop 5 Go BD1",
+		"Platform": "SPD",
+		"Conn": "port",
+		"Boot": "download"
+	},
+	{
+		"Devices": "Techno",
+		"Models": "Pop 5 Lte BD4",
+		"Platform": "SPD",
+		"Conn": "port",
+		"Boot": "download"
+	},
+	{
+		"Devices": "Techno",
+		"Models": "Pova Neo LE6H",
+		"Platform": "SPD",
+		"Conn": "port",
+		"Boot": "download"
+	},
+	{
+		"Devices": "Techno",
+		"Models": "Spark 7 PR651",
+		"Platform": "SPD",
+		"Conn": "port",
+		"Boot": "download"
+	},
+	{
+		"Devices": "Techno",
+		"Models": "Spark 7 PR651E",
+		"Platform": "SPD",
+		"Conn": "port",
+		"Boot": "download"
+	},
+	{
+		"Devices": "Techno",
+		"Models": "Spark 7 PR651H",
+		"Platform": "SPD",
+		"Conn": "port",
+		"Boot": "download"
+	},
+	{
+		"Devices": "Techno",
+		"Models": "Spark 8C KG5K",
+		"Platform": "SPD",
+		"Conn": "port",
+		"Boot": "download"
+	}
+]
