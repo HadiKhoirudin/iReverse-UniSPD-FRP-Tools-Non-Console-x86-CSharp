@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Drawing;
 using System.Text.RegularExpressions;
 using System.Threading;
@@ -26,7 +26,7 @@ namespace iReverse_UniSPD_FRP
 
         private void comboBoxTimeout_SelectedIndexChanged(object sender, EventArgs e)
         {
-            myserial.maxtimeout = Convert.ToInt32(
+            MySerialDevice.maxtimeout = Convert.ToInt32(
                 Main.SharedUI.comboBoxTimeout.Text
                     .Replace("Timeout", "")
                     .Replace("-", "")
