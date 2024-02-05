@@ -10,7 +10,7 @@ namespace iReverse_UniSPD_FRP.My
     public class MySerialDevice : IDisposable
     {
         public readonly object m_disposeLock;
-        public int maxtimeout = 1000;
+        public static int maxtimeout = 1000;
 
         public SerialPort m_port;
         private static bool isReceived = false;
