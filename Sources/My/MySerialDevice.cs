@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Drawing;
 using System.IO.Ports;
 using System.Threading;
@@ -93,7 +93,7 @@ namespace iReverse_UniSPD_FRP.My
                     Console.WriteLine(
                         "Read  <- ["
                             + response.Length
-                            + "] \t : "
+                            + "] \t\t : "
                             + BitConverter.ToString(response).Replace("-", " ")
                     );
 
@@ -155,7 +155,7 @@ namespace iReverse_UniSPD_FRP.My
                     Console.WriteLine(
                         "Write -> ["
                             + length
-                            + "] \t : "
+                            + "] \t\t : "
                             + BitConverter.ToString(buffer).Replace("-", " ")
                     );
 
