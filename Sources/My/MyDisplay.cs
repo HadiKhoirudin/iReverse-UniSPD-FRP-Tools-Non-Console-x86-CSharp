@@ -32,6 +32,12 @@ namespace iReverse_UniSPD_FRP.My
         }
         #endregion
 
+        public static void Alert(string msg, iReverseCustomUI.Form_Alert.enmType type)
+        {
+            iReverseCustomUI.Form_Alert frm = new iReverseCustomUI.Form_Alert();
+            frm.showAlert(msg, type);
+        }
+
         public static void RichLogs(string msg, Color colour, bool isBold, bool NextLine = false)
         {
             if (Main.SharedUI.Logs.InvokeRequired)

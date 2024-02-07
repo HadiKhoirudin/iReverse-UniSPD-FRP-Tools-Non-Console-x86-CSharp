@@ -165,6 +165,7 @@ namespace iReverse_UniSPD_FRP
             // 
             this.comboBoxTimeout.FormattingEnabled = true;
             this.comboBoxTimeout.Items.AddRange(new object[] {
+            "Timeout - 500 ms",
             "Timeout - 1000 ms",
             "Timeout - 1500 ms",
             "Timeout - 2000 ms",
@@ -173,7 +174,7 @@ namespace iReverse_UniSPD_FRP
             this.comboBoxTimeout.Name = "comboBoxTimeout";
             this.comboBoxTimeout.Size = new System.Drawing.Size(208, 21);
             this.comboBoxTimeout.TabIndex = 1;
-            this.comboBoxTimeout.Text = "Timeout - 1000 ms";
+            this.comboBoxTimeout.Text = "Timeout - 500 ms";
             this.comboBoxTimeout.SelectedIndexChanged += new System.EventHandler(this.comboBoxTimeout_SelectedIndexChanged);
             // 
             // Main

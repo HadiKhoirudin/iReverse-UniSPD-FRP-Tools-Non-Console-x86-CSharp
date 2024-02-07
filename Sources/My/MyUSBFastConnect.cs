@@ -19,6 +19,11 @@ namespace iReverse_UniSPD_FRP.My
         public static readonly Stopwatch watch = new Stopwatch();
         public static long delta = 0;
 
+        public static bool open = false;
+        public static string vid { get; set; }
+        public static string pid { get; set; }
+        public static string state { get; set; }
+
         public class comInfo
         {
             public string name { get; set; }
@@ -243,6 +248,48 @@ namespace iReverse_UniSPD_FRP.My
                             {
                                 Main.SharedUI.ComboPort.SelectedIndex = 0;
                             }
+
+                            if (!string.IsNullOrEmpty(Main.SharedUI.ComboPort.Text))
+                            {
+                                foreach (comInfo item in list)
+                                {
+                                    string[] hw = VID(item.hwid);
+                                    Console.WriteLine(
+                                        item.name
+                                            + " - [VID : "
+                                            + hw[0]
+                                            + " PID : "
+                                            + hw[1]
+                                            + "] - Connected!"
+                                    );
+                                    vid = hw[0];
+                                    pid = hw[1];
+                                    state =
+                                        item.name
+                                        + "\n[VID : "
+                                        + hw[0]
+                                        + " PID : "
+                                        + hw[1]
+                                        + "] - Connected!";
+
+                                    MyDisplay.Alert(
+                                        state,
+                                        iReverseCustomUI.Form_Alert.enmType.Success
+                                    );
+                                }
+
+                                if (!string.IsNullOrEmpty(vid))
+                                    open = true;
+                            }
+                            else
+                            {
+                                open = false;
+                                vid = "";
+                                pid = "";
+                                state = state.Replace("Connected!", "Disconnected!");
+                                MyDisplay.Alert(state, iReverseCustomUI.Form_Alert.enmType.Info);
+                                Console.WriteLine(state);
+                            }
                         }
                     )
                 );
@@ -256,7 +303,7 @@ namespace iReverse_UniSPD_FRP.My
             Main.SharedUI.ComboPort.Items.Clear();
             foreach (comInfo item2 in list)
             {
-                Console.WriteLine(item2.name);
+                Console.WriteLine("Port Name : " + item2.name + " (COM" + item2.comport + ")");
                 Main.SharedUI.ComboPort.Items.Add(item2.name + " (COM" + item2.comport + ")");
                 if (item2.name.Contains("SAMSUNG") && string.IsNullOrEmpty(regex))
                 {
