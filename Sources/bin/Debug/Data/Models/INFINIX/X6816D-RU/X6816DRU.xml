@@ -446,4 +446,509 @@
                     <Base>0x0</Base>
                     <Size>0xA00000</Size>
                 </Block>
-                <Flag>
+                <Flag>1</Flag>
+                <CheckFlag>2</CheckFlag>
+                <Description>Download prodnv section  operation</Description>
+            </File>
+            <File backup="1">
+                <ID>PhaseCheck</ID>
+                <IDAlias>PhaseCheck</IDAlias>
+                <Type>MiscDataCode2</Type>
+                <Block id="miscdata">
+                    <Base>0x0</Base>
+                    <Size>0x100000</Size>
+                </Block>
+                <Flag>0</Flag>
+                <CheckFlag>2</CheckFlag>
+                <Description>miscdata(phase check) section</Description>
+            </File>
+            <File>
+                <ID>EraseUBOOTLOG</ID>
+                <IDAlias>EraseUBOOTLOG</IDAlias>
+                <Type>EraseFlash2</Type>
+                <Block id="uboot_log">
+                    <Base>0x0</Base>
+                    <Size>0x0</Size>
+                </Block>
+                <Flag>0</Flag>
+                <CheckFlag>2</CheckFlag>
+                <Description>Erase UBootloader log section</Description>
+            </File>
+            <File>
+                <ID>VBMETA</ID>
+                <IDAlias>VBMETA</IDAlias>
+                <Type>CODE2</Type>
+                <Block id="vbmeta_a">
+                    <Base>0x0</Base>
+                    <Size>0x0</Size>
+                </Block>
+                <Flag>1</Flag>
+                <CheckFlag>2</CheckFlag>
+                <Description>vbmeta image file</Description>
+            </File>
+            <File>
+                <ID>VBMETA_SYSTEM</ID>
+                <IDAlias>VBMETA_SYSTEM</IDAlias>
+                <Type>CODE2</Type>
+                <Block id="vbmeta_system_a">
+                    <Base>0x0</Base>
+                    <Size>0x0</Size>
+                </Block>
+                <Flag>1</Flag>
+                <CheckFlag>2</CheckFlag>
+                <Description>system vbmeta image file</Description>
+            </File>
+            <File>
+                <ID>VBMETA_SYSTEM_EXT</ID>
+                <IDAlias>VBMETA_SYSTEM_EXT</IDAlias>
+                <Type>CODE2</Type>
+                <Block id="vbmeta_system_ext_a">
+                    <Base>0x0</Base>
+                    <Size>0x0</Size>
+                </Block>
+                <Flag>1</Flag>
+                <CheckFlag>2</CheckFlag>
+                <Description>system_ext vbmeta image file</Description>
+            </File>
+            <File>
+                <ID>VBMETA_VENDOR</ID>
+                <IDAlias>VBMETA_VENDOR</IDAlias>
+                <Type>CODE2</Type>
+                <Block id="vbmeta_vendor_a">
+                    <Base>0x0</Base>
+                    <Size>0x0</Size>
+                </Block>
+                <Flag>1</Flag>
+                <CheckFlag>2</CheckFlag>
+                <Description>vendor vbmeta image file</Description>
+            </File>
+            <File>
+                <ID>VBMETA_PRODUCT</ID>
+                <IDAlias>VBMETA_PRODUCT</IDAlias>
+                <Type>CODE2</Type>
+                <Block id="vbmeta_product_a">
+                    <Base>0x0</Base>
+                    <Size>0x0</Size>
+                </Block>
+                <Flag>1</Flag>
+                <CheckFlag>2</CheckFlag>
+                <Description>product vbmeta image file</Description>
+            </File>
+            <File>
+                <ID>VBMETA_ODM</ID>
+                <IDAlias>VBMETA_ODM</IDAlias>
+                <Type>CODE2</Type>
+                <Block id="vbmeta_odm_a">
+                    <Base>0x0</Base>
+                    <Size>0x0</Size>
+                </Block>
+                <Flag>1</Flag>
+                <CheckFlag>2</CheckFlag>
+                <Description>odm vbmeta image file</Description>
+            </File>
+            <File>
+                <ID>HYPERVSIOR</ID>
+                <IDAlias>HYPERVSIOR</IDAlias>
+                <Type>CODE2</Type>
+                <Block id="hypervsior_a">
+                    <Base>0x0</Base>
+                    <Size>0x0</Size>
+                </Block>
+                <Flag>1</Flag>
+                <CheckFlag>2</CheckFlag>
+                <Description>hypervsior image file</Description>
+            </File>
+            <File>
+                <ID>AVBMETA_RS</ID>
+                <IDAlias>AVBMETA_RS</IDAlias>
+                <Type>CODE2</Type>
+                <Block id="avbmeta_rs_a">
+                    <Base>0x0</Base>
+                    <Size>0x0</Size>
+                </Block>
+                <Flag>1</Flag>
+                <CheckFlag>2</CheckFlag>
+                <Description>avbmeta_rs image file</Description>
+            </File>
+            <File>
+                <ID>COMMON_RS1</ID>
+                <IDAlias>COMMON_RS1</IDAlias>
+                <Type>CODE2</Type>
+                <Block id="common_rs1_a">
+                    <Base>0x0</Base>
+                    <Size>0x0</Size>
+                </Block>
+                <Flag>1</Flag>
+                <CheckFlag>2</CheckFlag>
+                <Description>common_rs1 image file</Description>
+            </File>
+            <File>
+                <ID>COMMON_RS2</ID>
+                <IDAlias>COMMON_RS2</IDAlias>
+                <Type>CODE2</Type>
+                <Block id="common_rs2_a">
+                    <Base>0x0</Base>
+                    <Size>0x0</Size>
+                </Block>
+                <Flag>1</Flag>
+                <CheckFlag>2</CheckFlag>
+                <Description>common_rs2 image file</Description>
+            </File>
+            <File>
+                <ID>Modem_LTE</ID>
+                <IDAlias>Modem_LTE</IDAlias>
+                <Type>CODE2</Type>
+                <Block id="l_modem_a">
+                    <Base>0x0</Base>
+                    <Size>0x0</Size>
+                </Block>
+                <Flag>1</Flag>
+                <CheckFlag>2</CheckFlag>
+                <Description>l_modem image file</Description>
+            </File>
+            <File>
+                <ID>Modem_LTE_DELTANV</ID>
+                <IDAlias>Modem_LTE_DELTANV</IDAlias>
+                <Type>CODE2</Type>
+                <Block id="l_deltanv_a">
+                    <Base>0x0</Base>
+                    <Size>0x0</Size>
+                </Block>
+                <Flag>1</Flag>
+                <CheckFlag>2</CheckFlag>
+                <Description>l_deltanv image file</Description>
+            </File>
+            <File>
+                <ID>DSP_LTE_LTE</ID>
+                <IDAlias>DSP_LTE_LTE</IDAlias>
+                <Type>CODE2</Type>
+                <Block id="l_ldsp_a">
+                    <Base>0x0</Base>
+                    <Size>0x0</Size>
+                </Block>
+                <Flag>1</Flag>
+                <CheckFlag>2</CheckFlag>
+                <Description>l_ldsp image file</Description>
+            </File>
+            <File>
+                <ID>DSP_LTE_GGE</ID>
+                <IDAlias>DSP_LTE_GGE</IDAlias>
+                <Type>CODE2</Type>
+                <Block id="l_gdsp_a">
+                    <Base>0x0</Base>
+                    <Size>0x0</Size>
+                </Block>
+                <Flag>1</Flag>
+                <CheckFlag>2</CheckFlag>
+                <Description>l_gdsp image file</Description>
+            </File>
+	    <File>
+                <ID>DSP_LTE_AG</ID>
+                <IDAlias>DSP_LTE_AG</IDAlias>
+                <Type>CODE2</Type>
+                <Block id="l_agdsp_a">
+                     <Base>0x0</Base>
+                     <Size>0x0</Size>
+                </Block>
+                <Flag>1</Flag>
+                <CheckFlag>2</CheckFlag>
+                <Description>lte agdsp image file</Description>
+            </File>
+            <File>
+                <ID>DSP_LTE_CDMA</ID>
+                <IDAlias>DSP_LTE_CDMA</IDAlias>
+                <Type>CODE2</Type>
+                <Block id="l_cdsp_a">
+                    <Base>0x0</Base>
+                    <Size>0x0</Size>
+                </Block>
+                <Flag>1</Flag>
+                <CheckFlag>2</CheckFlag>
+                <Description>l_cdsp image file</Description>
+            </File>
+            <File>
+                <ID>DFS</ID>
+                <IDAlias>DFS</IDAlias>
+                <Type>CODE2</Type>
+                <Block id="pm_sys_a">
+                    <Base>0x0</Base>
+                    <Size>0x0</Size>
+                </Block>
+                <Flag>1</Flag>
+                <CheckFlag>2</CheckFlag>
+                <Description>pm_sys image file</Description>
+            </File>
+            <File>
+                <ID>Modem_GNSS</ID>
+                <IDAlias>Modem_GNSS</IDAlias>
+                <Type>CODE2</Type>
+                <Block id="gnssmodem_a">
+                    <Base>0x0</Base>
+                    <Size>0x0</Size>
+                </Block>
+                <Flag>1</Flag>
+                <CheckFlag>2</CheckFlag>
+                <Description>Modem_GNSS image file</Description>
+            </File>
+            <File>
+                <ID>Modem_WCN</ID>
+                <IDAlias>Modem_WCN</IDAlias>
+                <Type>CODE2</Type>
+                <Block id="wcnmodem_a">
+                    <Base>0x0</Base>
+                    <Size>0x0</Size>
+                </Block>
+                <Flag>1</Flag>
+                <CheckFlag>2</CheckFlag>
+                <Description>Modem_WCN image file</Description>
+            </File>
+            <File>
+                <ID>BOOT</ID>
+                <IDAlias>BOOT</IDAlias>
+                <Type>CODE2</Type>
+                <Block id="boot_a">
+                    <Base>0x0</Base>
+                    <Size>0x0</Size>
+                </Block>
+                <Flag>1</Flag>
+                <CheckFlag>0</CheckFlag>
+                <Description>Kernel image file</Description>
+            </File>
+            <File>
+                <ID>DTBO</ID>
+                <IDAlias>DTBO</IDAlias>
+                <Type>CODE2</Type>
+                <Block id="dtbo_a">
+                    <Base>0x0</Base>
+                    <Size>0x0</Size>
+                </Block>
+                <Flag>1</Flag>
+                <CheckFlag>2</CheckFlag>
+                <Description>dtbo image file</Description>
+            </File>
+            <File>
+                <ID>Super</ID>
+                <IDAlias>Super</IDAlias>
+                <Type>YAFFS_IMG2</Type>
+                <Block id="super">
+                    <Base>0x0</Base>
+                    <Size>0x0</Size>
+                </Block>
+                <Flag>1</Flag>
+                <CheckFlag>0</CheckFlag>
+                <Description>Super image file</Description>
+            </File>
+            <File>
+                <ID>Cache</ID>
+                <IDAlias>Cache</IDAlias>
+                <Type>YAFFS_IMG2</Type>
+                <Block id="cache">
+                    <Base>0x0</Base>
+                    <Size>0x0</Size>
+                </Block>
+                <Flag>1</Flag>
+                <CheckFlag>2</CheckFlag>
+                <Description>Download cache section operation</Description>
+            </File>
+	
+            <!--redmine 121415 add tranfs partition yanyongyong 2022.1.17 begin-->		
+            <File>
+                <ID>Tranfs</ID>
+                <IDAlias>Tranfs</IDAlias>
+                <Type>EraseFlash2</Type>
+                <Block id="tranfs">
+                        <Base>0x0</Base>
+                        <Size>0x0</Size>
+                </Block>
+                <Flag>0</Flag>
+                <CheckFlag>0</CheckFlag>
+                <Description>Tranfs image file</Description>
+            </File>
+	    <!--redmine 121415 add tranfs partition yanyongyong 2022.1.17 end-->
+			
+            <File>
+                <ID>UserData</ID>
+                <IDAlias>UserData</IDAlias>
+                <Type>YAFFS_IMG2</Type>
+                <Block id="userdata">
+                    <Base>0x0</Base>
+                    <Size>0x0</Size>
+                </Block>
+                <Flag>1</Flag>
+                <!--redmine 105402 for loglevel feature wulliangchen 2022-01-10 begin-->
+                <CheckFlag>0</CheckFlag>
+                <!--redmine 105402 for loglevel feature wulliangchen 2022-01-10 begin-->
+                <Description>UserData image file</Description>
+            </File>
+            <File>
+                <ID>BootLogo</ID>
+                <IDAlias>BootLogo</IDAlias>
+                <Type>CODE2</Type>
+                <Block id="logo">
+                    <Base>0x0</Base>
+                    <Size>0x0</Size>
+                </Block>
+                <Flag>1</Flag>
+                <CheckFlag>0</CheckFlag>
+                <Description>BootLoader boot logo</Description>
+            </File>
+            <File>
+                <ID>Fastboot_Logo</ID>
+                <IDAlias>Fastboot_Logo</IDAlias>
+                <Type>CODE2</Type>
+                <Block id="fbootlogo">
+                    <Base>0x0</Base>
+                    <Size>0x0</Size>
+                </Block>
+                <Flag>1</Flag>
+                <CheckFlag>2</CheckFlag>
+                <Description>Fastboot Logo</Description>
+            </File>
+            <File>
+                <ID>Socko</ID>
+                <IDAlias>Socko</IDAlias>
+                <Type>YAFFS_IMG2</Type>
+                <Block id="socko_a">
+                    <Base>0x0</Base>
+                    <Size>0x0</Size>
+                </Block>
+                <Flag>1</Flag>
+                <CheckFlag>2</CheckFlag>
+                <Description>Download socko section operation</Description>
+            </File>
+            <File>
+                <ID>Odmko</ID>
+                <IDAlias>Odmko</IDAlias>
+                <Type>YAFFS_IMG2</Type>
+                <Block id="odmko_a">
+                    <Base>0x0</Base>
+                    <Size>0x0</Size>
+                </Block>
+                <Flag>1</Flag>
+                <CheckFlag>2</CheckFlag>
+                <Description>Download odmko section operation</Description>
+            </File>
+            <File>
+                <ID>FLASH_LTE</ID>
+                <IDAlias>EraseRuntimeNV_LTE</IDAlias>
+                <Type>EraseFlash2</Type>
+                <Block id="l_runtimenv1">
+                    <Base>0x0</Base>
+                    <Size>0x0</Size>
+                </Block>
+                <Flag>0</Flag>
+                <CheckFlag>2</CheckFlag>
+                <Description>Erase l_runtimenv1 section operation</Description>
+            </File>
+            <File>
+                <ID>EraseMisc</ID>
+                <IDAlias>EraseMisc</IDAlias>
+                <Type>EraseFlash2</Type>
+                <Block id="misc">
+                    <Base>0x0</Base>
+                    <Size>0x0</Size>
+                </Block>
+                <Flag>0</Flag>
+                <CheckFlag>0</CheckFlag>
+                <Description>Erase misc section operation</Description>
+            </File>
+            <File>
+                <ID>EraseSysdumpdb</ID>
+                <IDAlias>EraseSysdumpdb</IDAlias>
+                <Type>EraseFlash2</Type>
+                <Block id="sysdumpdb">
+                    <Base>0x0</Base>
+                    <Size>0x0</Size>
+                </Block>
+                <Flag>0</Flag>
+                <CheckFlag>0</CheckFlag>
+                <Description>Erase misc section operation</Description>
+            </File>
+            <File>
+                <ID>Trustos</ID>
+                <IDAlias>Trustos</IDAlias>
+                <Type>CODE2</Type>
+                <Block id="trustos_a">
+                    <Base>0x0</Base>
+                    <Size>0x0</Size>
+                </Block>
+                <Flag>1</Flag>
+                <CheckFlag>2</CheckFlag>
+                <Description>Download trustos operation</Description>
+            </File>
+            <File>
+                <ID>Teecfg</ID>
+                <IDAlias>Teecfg</IDAlias>
+                <Type>CODE2</Type>
+                <Block id="teecfg_a">
+                    <Base>0x0</Base>
+                    <Size>0x0</Size>
+                </Block>
+                <Flag>1</Flag>
+                <CheckFlag>2</CheckFlag>
+                <Description>Download teecfg operation</Description>
+            </File>
+            <File>
+                <ID>SML</ID>
+                <IDAlias>SML</IDAlias>
+                <Type>CODE2</Type>
+                <Block id="sml_a">
+                    <Base>0x0</Base>
+                    <Size>0x0</Size>
+                </Block>
+                <Flag>1</Flag>
+                <CheckFlag>2</CheckFlag>
+                <Description>Download sml operation</Description>
+            </File>
+            <File>
+                <ID>UBOOTLoader</ID>
+                <IDAlias>UBOOT_LOADER</IDAlias>
+                <Type>UBOOT_LOADER2</Type>
+                <Block id="uboot_a">
+                    <Base>0x0</Base>
+                    <Size>0x0</Size>
+                </Block>
+                <Flag>1</Flag>
+                <CheckFlag>0</CheckFlag>
+                <Description>UBootloader image file</Description>
+            </File>
+            <File>
+                <ID>Persist</ID>
+                <IDAlias>Persist</IDAlias>
+                <Type>YAFFS_IMG2</Type>
+                <Block id="persist">
+                    <Base>0x0</Base>
+                    <Size>0x0</Size>
+                </Block>
+                <Flag>1</Flag>
+                <CheckFlag>0</CheckFlag>
+                <Description>Persist image file</Description>
+            </File>
+            <File>
+                <ID>EraseMetadata</ID>
+                <IDAlias>EraseMetadata</IDAlias>
+                <Type>EraseFlash2</Type>
+                <Block id="metadata">
+                    <Base>0x0</Base>
+                    <Size>0x0</Size>
+                </Block>
+                <Flag>0</Flag>
+                <!--redmine 105402 for loglevel feature wulliangchen 2022-01-10 begin-->
+                <CheckFlag>0</CheckFlag>
+                <!--redmine 105402 for loglevel feature wulliangchen 2022-01-10 end-->
+                <Description>Erase metadata section operation</Description>
+            </File>
+            <File>
+                <ID>SPLLoader</ID>
+                <IDAlias>SPL_LOADER</IDAlias>
+                <Type>UBOOT_LOADER2</Type>
+                <Block id="splloader">
+                    <Base>0x80000000</Base>
+                    <Size>0x0</Size>
+                </Block>
+                <Flag>1</Flag>
+                <CheckFlag>0</CheckFlag>
+                <Description>spl image file</Description>
+            </File>
+        </Scheme>
+</SchemeList></BMAConfig>
