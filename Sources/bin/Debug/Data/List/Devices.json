@@ -14,6 +14,20 @@
 		"Boot": "download"
 	},
 	{
+		"Devices": "Infinix Hot 12 Play NFC",
+		"Models": "X6816D",
+		"Platform": "SPD",
+		"Conn": "port",
+		"Boot": "download"
+	},
+	{
+		"Devices": "Infinix Hot 12 Play NFC",
+		"Models": "X6816DRU",
+		"Platform": "SPD",
+		"Conn": "port",
+		"Boot": "download"
+	},
+	{
 		"Devices": "Infinix Smart 6 - A",
 		"Models": "X6511",
 		"Platform": "SPD",
